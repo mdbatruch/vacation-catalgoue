@@ -1,0 +1,19 @@
+{
+    "avatarFolder" : "/world_app/images/uploads/avatar/",
+    "maxFileSize" : 5242880,
+    "randomizeFilenames" : true,
+    "allowedFileTypes" : "image/jpeg,image/png,image/gif",
+    "imageQuality" : 8,
+    "imageSize" : {
+        "small" : 300,
+    },
+    
+    "db": {
+        "host" : "localhost",
+        "user" : "world-app-user",
+        "password" : "Humber-WDDM",
+        "name" : "world-app-db"
+    },
+    
+    "loginToken" : "fdshfksgfdgdhfsdjkfdshfskdnsfl"
+}

@@ -1,0 +1,281 @@
+#mySidenav {
+    width: 250px;
+}
+
+#main {
+    margin-left: 250px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ede8e1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	border-right: 1px solid rgba(133, 167, 185, 0.11);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(21, 44, 56, 0.9);
+    display: block;
+    transition: 0.3s;
+	
+	cursor: pointer;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #ffb330;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.home-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    margin: 10px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#nav-items {
+    float: right;
+    text-align: none;
+    margin: 10px;
+    line-height: 35px;
+}
+
+.admin-content h2{
+	font-family: Poppins, sans-serif;
+    color:#333;
+}
+
+.admin-content p{
+    margin-top:5px;
+}
+
+/*
+* ADMIN POST STYLINGS - PAM
+*/
+
+#post{
+    margin-top: 45px;
+}
+#post p{
+    font-family: 'Poppins',sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+/*
+pam: preview uploading imgs
+*/
+#display-images{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+}
+#display-images .imgs{
+    display: inline-block;
+    margin: 5px;
+    list-style: none;
+    text-align: center;
+    width:200px;
+    overflow: hidden;
+}
+#display-images .imgs img{
+    height:150px;
+}
+/*
+pam: styling for input form
+*/
+#sharePost{
+    max-width: 480px;
+    margin:0 auto;
+    display: block;
+    padding-top:10px;
+}
+#sharePost ul li label{
+    display: block;
+    padding-top:20px;
+    padding-bottom:10px;
+    text-align: left;
+}
+#sharePost ul li input,
+#sharePost ul li textarea{
+    font-size:18px;
+    text-align: left;
+    text-indent: 10px;
+    background: none;
+    border:none;
+}
+#sharePost ul li input{
+    height: 30px;
+    width:460px;
+    border-bottom: 1px solid #9a9a9a;
+}
+#sharePost ul li textarea{
+    border: 1px solid #9a9a9a;
+    margin-top:10px;
+}
+#sharePost input[type="text"]{
+    margin-bottom: 20px;
+}
+#sharePost input[type="file"],
+#sharePost input[type="submit"]{
+    height:50px;
+    width:200px;
+    padding: 0;
+    border: none;
+    text-indent: 0;
+    text-align: center;
+}
+#sharePost input[type="submit"]{
+    background-color:#000;
+    color:#fff;
+    margin-bottom: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+#sharePost ul .inline{
+    display: inline-block;
+    margin-right: 5px;
+}
+#sharePost ul .last{
+    position: relative;
+    top:-3px;
+}
+#sharePost ul li{
+    text-align: center;
+}
+/*
+pam: select bar
+*/
+#sharePost #location-selector{
+    margin-bottom: 5px;
+}
+#sharePost #location-selector select{
+    background: none;
+    font-size: 110%;
+    height: 30px;
+    width: 150px;
+    margin: 5px 0;
+}
+/*
+pam: star rating bar
+*/
+#sharePost #rating{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*
+pam: input 'file' stylings
+*/
+.input-file-container {
+  position: relative;
+    padding:none;
+} 
+.js .input-file-trigger {
+  display: inline;
+/*  padding: 14px 45px;*/
+  background: #d23939;
+  color: #fff;
+  font-size: 1.25em;
+  transition: all .4s;
+  cursor: pointer;
+    width:200px;
+    padding:none;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+/*  width: 225px;*/
+  width: 200px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #00ceff;
+  color: #000;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Selected file: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+* ADMIN FAVORITES STYLING - PAM
+*/
+
+#favoritePost figure{
+    width:300px;
+    height:150px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #999;
+}
+#favoritePost img{
+    width:100%;
+}
+/*
+
+*/
+
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mySidenav {
+        width: 60px;
+    }
+    #main {
+        margin-left: 60px;
+    }
+}

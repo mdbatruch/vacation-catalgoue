@@ -1,0 +1,9 @@
+Google Static Maps API Key:
+AIzaSyCF1F_DOA_N0Tev7tX5Nsa7PDYaWysYRlc
+
+note: Need different API keys for regular/other Google Map APIs
+
+Remote SQL
+http://mike-batruch.ca/world-app-db/
+world-app-user
+Humber-WDDM
